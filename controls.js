@@ -236,7 +236,7 @@ function showMessage(player, message) {
 
 	messages[player].showingInterval = smoothShowMessage(player, 33);
 	players[player].add(messages[player]);
-	sprite.delInterval = setTimeout(function() {messages[player].hidingInterval = smoothHideMessage(player, 33);}, 4000);
+	sprite.delInterval = setTimeout(function() {messages[player].hidingInterval = smoothHideMessage(player, 33);}, 5000);
 }
 
 function smoothShowMessage(player, delay) {
