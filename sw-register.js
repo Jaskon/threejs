@@ -1,6 +1,6 @@
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
-        var promise = navigator.serviceWorker.register('/sw.js', {scope: '/'});
+        var promise = navigator.serviceWorker.register(currentLocation + '/sw.js');
         promise.then(function(registration) {
             console.log('[sw] Registered. Scope: ', registration.scope);
         }).catch(function(err) {

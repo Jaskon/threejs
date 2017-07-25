@@ -1,3 +1,5 @@
+var currentLocation = window.location.href.substring(0, window.location.href.lastIndexOf('/'));
+
 var texturesLoaded = 0;
 var texturesToLoad = 0;
 
@@ -22,7 +24,7 @@ function preLoad () {
 	});*/
 
 	var jsonLoader = new THREE.JSONLoader();
-	var flut = jsonLoader.parse(fluttershy, '/model/');
+	var flut = jsonLoader.parse(fluttershy, currentLocation + '/model/');
 	for (var i = 0; i < flut.materials.length; i++)
 		flut.materials[i].skinning = true;
 	material = new THREE.MultiMaterial(flut.materials);

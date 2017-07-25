@@ -1,6 +1,6 @@
-var cacheName = 'offline-v1';
+var cacheName = 'offline-v2';
 var filesToCache = [
-    '/test.html',
+    'test.html',
     'https://rawgit.com/mrdoob/three.js/master/build/three.js',
     'https://rawgit.com/mrdoob/three.js/master/examples/js/loaders/MTLLoader.js',
     'https://rawgit.com/mrdoob/three.js/master/examples/js/loaders/OBJLoader.js',
