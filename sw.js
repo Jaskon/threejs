@@ -1,4 +1,4 @@
-var cacheName = 'offline-v2';
+var cacheName = 'offline-v0.1';
 var filesToCache = [
     'test.html',
     'https://rawgit.com/mrdoob/three.js/master/build/three.js',
