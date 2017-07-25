@@ -9,12 +9,12 @@
     "icons": [
         {
             "src": "sprite.png",
-            "size": "70x70",
+            "sizes": "70x70",
             "type": "image/png"
         },
         {
             "src": "Parasprite_Fluttershy.png",
-            "size": "192x192",
+            "sizes": "192x192 512x512",
             "type": "image/png"
         }
     ]
