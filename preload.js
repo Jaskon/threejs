@@ -22,7 +22,7 @@ function preLoad () {
 	});*/
 
 	var jsonLoader = new THREE.JSONLoader();
-	var flut = jsonLoader.parse(fluttershy, "https://rawgit.com/Jaskon/hi/master/model/");
+	var flut = jsonLoader.parse(fluttershy, '/model/');
 	for (var i = 0; i < flut.materials.length; i++)
 		flut.materials[i].skinning = true;
 	material = new THREE.MultiMaterial(flut.materials);
@@ -38,7 +38,7 @@ function preLoad () {
 
 function isLoaded() {
 	if (texturesLoaded < texturesToLoad) {
-		setTimeout("isLoaded()", 200);
+		setTimeout('isLoaded()', 200);
 	} else {
 		init();
 	}

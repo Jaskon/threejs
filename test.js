@@ -131,14 +131,14 @@ function init() {
 	scene.add(sprite);
 
 	THREE.TextureLoader.prototype.crossOrigin = '';
-	texture = new THREE.TextureLoader().load("http://i.imgur.com/0RdlFrx.png");
+	texture = new THREE.TextureLoader().load("sprite.png");		// http://i.imgur.com/0RdlFrx.png
     material = new THREE.SpriteMaterial({map: texture, color: 0xffffff, fog: false});
     sprite = new THREE.Sprite(material);
     sprite.position.set(10, 10, 12);
     sprite.scale.set(1.5, 1.5, 1.5);
     scene.add(sprite);
 
-    map = new THREE.TextureLoader().load("http://i.imgur.com/ZCexHwt.png");
+    map = new THREE.TextureLoader().load("sprite1.png");		// http://i.imgur.com/ZCexHwt.png
     material = new THREE.SpriteMaterial({map: map, color: 0xffffff, fog: false});
     sprite = new THREE.Sprite(material);
     sprite.position.set(10, 10, 10);
