@@ -12,6 +12,7 @@ var filesToCache = [
     'test.js',
     'model/Fluttershy1.js',
     'sw-register.js',
+    'manifest.json',
 
     // Fluttershy model parts
     'model/fluttershy_wings.png',
