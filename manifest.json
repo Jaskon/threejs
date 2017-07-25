@@ -3,7 +3,6 @@
     "short_name": "3D test",
     "start_url": "/test.html",
     "scope": "/",
-    "display": "standalone",
     "orientation": "landscape",
     "theme_color": "#11ee11",
     "background_color": "#EEE",
